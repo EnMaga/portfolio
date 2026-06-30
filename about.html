@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Enrico Magazzino</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#0f1410;--night:#0c1117;--night-2:#121a23;--paper:#f3efe4;--paper-dim:#cfc9b8;--veg:#8fae6b;--soil:#c4793f;--sar:#5c8aa6;--line:rgba(243,239,228,0.14);--max:1100px;}
+    *{box-sizing:border-box;margin:0;padding:0;} body{font-family:Inter,sans-serif;background:var(--night);color:var(--paper);line-height:1.6;}
+    a{color:inherit;text-decoration:none;} .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;} header{position:sticky;top:0;z-index:50;background:rgba(12,17,23,0.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);} nav.wrap{display:flex;align-items:center;justify-content:space-between;height:64px;} .brand{font-family:Fraunces,serif;font-size:18px;font-weight:600;} .brand span{color:var(--veg);} .navlinks{display:flex;gap:28px;font-size:13px;} .navlinks a{color:var(--paper-dim);font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.04em;transition:color .2s;} .navlinks a:hover{color:var(--veg);} .navlinks a.cv{border:1px solid var(--veg);padding:8px 14px;border-radius:999px;color:var(--veg);} .navlinks a.active{color:var(--paper);} main{padding:80px 0 100px;} .hero{padding:56px 0 54px; margin-bottom:32px; text-align:left; border:1px solid var(--line); border-radius:24px; background:linear-gradient(90deg, rgba(12,17,23,0.96) 0%, rgba(12,17,23,0.72) 45%, rgba(12,17,23,0.28) 100%), url("pictures/sfondo.JPG") center/cover; box-shadow:0 20px 48px rgba(0,0,0,0.16);} .hero h1{font-size:clamp(34px,4.2vw,48px);max-width:12ch;line-height:1.05;margin:0 0 18px; text-align:left;} .eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--veg);display:flex;align-items:center;justify-content:flex-start;gap:10px;margin-bottom:18px;} .eyebrow::before{content:"";width:22px;height:1px;background:var(--veg);display:inline-block;} .grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:36px;align-items:start;} .card{border:1px solid var(--line);background:linear-gradient(160deg, var(--night-2), transparent);border-radius:20px;padding:28px;} .card p{color:#d8d4c8;margin-bottom:16px;font-size:15px;} .stack{display:grid;gap:10px;margin-top:18px;} .stack div{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:10px;border-bottom:1px dashed var(--line);padding-bottom:8px;color:var(--paper-dim);} .stack span{color:var(--paper);flex:1 1 55%;text-align:right;} footer{padding:0 0 48px;} .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;border-top:1px solid var(--line);padding-top:24px;font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--paper-dim);} @media (max-width:860px){.grid{grid-template-columns:1fr;}.navlinks{display:none;}}
+      .doc-viewer{margin-top:28px;}
+    .doc-viewer h3{font-family:Fraunces,serif;font-size:20px;margin-bottom:14px;}
+    .doc-viewer p{color:#d8d4c8;margin-bottom:16px;font-size:15px;}
+    .doc-list{display:grid;gap:12px;margin-top:12px;}
+    .doc-item{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border:1px solid rgba(243,239,228,0.16);border-radius:16px;background:rgba(255,255,255,0.03);cursor:pointer;transition:transform .18s,background .18s;}
+    .doc-item:hover{transform:translateY(-1px);background:rgba(143,174,107,0.08);}
+    .doc-item span{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--paper);}
+    .doc-item button{border:1px solid var(--veg);background:transparent;color:var(--veg);border-radius:999px;padding:8px 14px;font-family:'JetBrains Mono',monospace;font-size:12px;cursor:pointer;}
+    .doc-preview{margin-top:24px;border:1px solid rgba(243,239,228,0.16);border-radius:18px;overflow:hidden;background:var(--night-2);min-height:520px;}
+    .doc-preview iframe{width:100%;height:100%;min-height:520px;border:0;background:#000;}
+    .preview-note{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--paper-dim);margin-top:14px;}
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <div class="brand">Enrico <span>Magazzino</span></div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="CV_Enrico_Magazzino.pdf" class="cv" download>Download CV ↓</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="wrap hero">
+    <div class="eyebrow">About</div>
+    <h1>Researcher at the intersection of ecology, remote sensing, and data science.</h1>
+  </div>
+  <div class="wrap grid">
+    <div class="card">
+      <p>I specialise in Earth observation-driven monitoring of regenerative agriculture, combining satellite and drone data to understand landscape change and ecological function.</p>
+      <p>My work spans machine learning, geospatial analysis, UAV survey design, and the development of workflows that turn complex data into evidence for biodiversity and sustainable land management.</p>
+      <p>Desktop GUI pipelines for Sentinel-1 (SAR) and Sentinel-2 (optical) — SNAP ARD processing, cloud masking, biophysical variables and spectral indices as Cloud-Optimised GeoTIFFs. This work was accepted for a poster and annals article at ASITA 2026 in the session “New sensors, platforms and products in remote sensing.”</p>
+      <p>My background in natural sciences and ecology helps me connect technical analysis with environmental interpretation and practical applications.</p>
+    </div>
+    <div class="card">
+      <h3 style="font-family:Fraunces,serif;font-size:22px;margin-bottom:14px;">Core toolkit</h3>
+      <div class="stack">
+        <div>Languages <span>Python · R</span></div>
+        <div>Remote sensing <span>SAR · Optical · Thermal</span></div>
+        <div>UAV <span>LiDAR · Photogrammetry · Thermal</span></div>
+        <div>GIS <span>QGIS · ArcGIS · GeoServer</span></div>
+        <div>Methods <span>Machine learning · AI workflows · WebGIS</span></div>
+        <div>Fieldwork <span>UAV campaigns · survey planning · ecological sampling</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:40px;">
+    <div class="card">
+      <h3 style="font-family:Fraunces,serif;font-size:22px;margin-bottom:14px;">Thesis supervision</h3>
+      <p>I supervised two project theses within the GIScience and Remote Piloting Systems programme at the University of Padua (UEL):</p>
+      <div class="stack" style="margin-top:16px; gap:16px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; padding-bottom:16px; border-bottom:1px dashed var(--line);">
+          <strong>Monitoring regenerative agriculture practices using Sentinel-1 and Sentinel-2 data and machine learning models</strong>
+          <span style="font-family:'JetBrains Mono',monospace;color:var(--paper);font-size:14px;">2026 — 2 students</span>
+        </div>
+        <div style="padding-top:16px;">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px;">
+            <strong>Summer school work supervision for Assignment D — Remote Sensing and Environmental Modelling Challenge</strong>
+            <span style="font-family:'JetBrains Mono',monospace;color:var(--paper);font-size:14px;">7–13 September 2025 — group supervision</span>
+          </div>
+          <p style="margin:8px 0 0 0;color:#d8d4c8;">I supervised the group project during the CIRGEO Summer School 2025, enabling applied remote sensing and environmental modelling research.</p>
+        </div>
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; padding-top:16px; border-top:1px dashed var(--line);">
+          <strong>Precision agriculture and green policies: GIS and remote sensing for monitoring crop rotation in the Province of Ferrara</strong>
+          <span style="font-family:'JetBrains Mono',monospace;color:var(--paper);font-size:14px;">2025 — 1 student</span>
+        </div>
+      </div>
+      <p style="margin-top:12px;color:#d8d4c8;">Teaching assistant for Professor Francesco Pirotti (TESAF), supporting Bachelor and Master courses in Remote Sensing and GIS Basics. See <a href="https://www.tesaf.unipd.it/en/francesco-pirotti" style="color:var(--veg);">Francesco Pirotti</a>.</p>
+
+      <p style="margin-top:12px;color:#d8d4c8;">I am also coauthor of "Earth Sensing in the Dolomites: A Summer School for Capacity Building and Collaboration on Geomatics for Environmental Applications" (ISPRS Annals contribution ID: 1372), accepted for the XXV ISPRS Congress, Toronto, Canada, 4–11 July 2026.</p>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom">
+      <span>© 2026 Enrico Magazzino</span>
+      <span>Updated June 2026</span>
+    </div>
+  </div>
+</footer>
+<script>
+  document.querySelectorAll('.doc-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const src = item.dataset.src;
+      const frame = document.getElementById('docFrame');
+      if (frame && src) {
+        frame.src = src;
+      }
+    });
+  });
+</script>
+</body>
+</html>

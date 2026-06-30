@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Enrico Magazzino</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#0f1410;--night:#0c1117;--night-2:#121a23;--paper:#f3efe4;--paper-dim:#cfc9b8;--veg:#8fae6b;--soil:#c4793f;--sar:#5c8aa6;--line:rgba(243,239,228,0.14);--max:1100px;}
+    *{box-sizing:border-box;margin:0;padding:0;} body{font-family:Inter,sans-serif;background:var(--night);color:var(--paper);line-height:1.6;}
+    a{color:inherit;text-decoration:none;} .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;} header{position:sticky;top:0;z-index:50;background:rgba(12,17,23,0.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);} nav.wrap{display:flex;align-items:center;justify-content:space-between;height:64px;} .brand{font-family:Fraunces,serif;font-size:18px;font-weight:600;} .brand span{color:var(--veg);} .navlinks{display:flex;gap:28px;font-size:13px;} .navlinks a{color:var(--paper-dim);font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.04em;transition:color .2s;} .navlinks a:hover{color:var(--veg);} .navlinks a.cv{border:1px solid var(--veg);padding:8px 14px;border-radius:999px;color:var(--veg);} .navlinks a.active{color:var(--paper);} main{padding:80px 0 100px;} .eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--veg);display:flex;align-items:center;justify-content:flex-start;gap:10px;margin-bottom:18px;} .eyebrow::before{content:"";width:22px;height:1px;background:var(--veg);display:inline-block;} .hero{text-align:left;padding:56px 0 54px; margin-bottom:32px; border:1px solid var(--line); border-radius:24px; background:linear-gradient(90deg, rgba(12,17,23,0.96) 0%, rgba(12,17,23,0.72) 45%, rgba(12,17,23,0.28) 100%), url("pictures/ecuador.jpg") center/cover; box-shadow:0 20px 48px rgba(0,0,0,0.16);} .hero h1{font-size:clamp(34px,4.2vw,48px);max-width:12ch;line-height:1.05;margin:0 0 18px; text-align:left;} .project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:28px;} .project-card{border:1px solid var(--line);border-radius:20px;padding:24px;background:linear-gradient(160deg, rgba(18,26,35,0.95), rgba(12,17,23,0.72));} .project-card h3{font-size:22px;margin-bottom:10px;} .project-card p{font-size:15px;color:#d8d4c8;margin-bottom:12px;} .project-card span{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--soil);} footer{padding:0 0 48px;} .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;border-top:1px solid var(--line);padding-top:24px;font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--paper-dim);} @media (max-width:860px){.project-grid{grid-template-columns:1fr;}.navlinks{display:none;}}
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <div class="brand">Enrico <span>Magazzino</span></div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="CV_Enrico_Magazzino.pdf" class="cv" download>Download CV ↓</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="wrap hero">
+    <div class="eyebrow">Projects</div>
+    <h1>Selected work at the edge of ecology, sensing, and geospatial intelligence.</h1>
+  </div>
+  <div class="wrap project-grid">
+    <article class="project-card">
+      <span>Regenerative agriculture monitoring</span>
+      <h3>Satellite–UAV fusion for practice verification</h3>
+      <p>Developing workflows that combine Sentinel-1, multispectral, thermal, and UAV LiDAR data to verify regenerative agricultural practices and assess biodiversity indicators.</p>
+    </article>
+    <article class="project-card">
+      <span>WebGIS & geospatial systems</span>
+      <h3>GeoServer and MapStore-based platforms</h3>
+      <p>Building and maintaining geospatial platforms for research and applied land management, with an emphasis on visualisation, indexing, and analysis pipelines.</p>
+    </article>
+    <article class="project-card">
+      <span>Dryland ecology</span>
+      <h3>Vegetation pattern formation</h3>
+      <p>Study of the formation of regular vegetation patterns in drylands, including drought experiments with <em>Paspalum vaginatum</em>, remote sensing analysis (RGB, multispectral, thermal), mathematical modelling, and presentation at NWO Life 2023.</p>
+    </article>
+    <article class="project-card">
+      <span>MSc research</span>
+      <h3>Drought effects on plant communities</h3>
+      <p>Investigating how drought and atmospheric nutrient deposition together alter plant traits, diversity, soil microbiomes, community structure, and ecosystem functioning in grassland systems.</p>
+    </article>
+    <article class="project-card">
+      <span>MSc fieldwork</span>
+      <h3>Bird abundance surveys in forest habitats</h3>
+      <p>Comparing traditional bird survey methods with acoustic recording in a meta-analysis to evaluate ecological monitoring effectiveness.</p>
+    </article>
+    <article class="project-card">
+      <span>Bachelor’s thesis</span>
+      <h3>Nardus grassland germination research</h3>
+      <p>Preliminary germination and post-germination studies of species-rich Natura 2000 Nardus grassland species for restoration in the Trentino region.</p>
+    </article>
+    <article class="project-card">
+      <span>Remote sensing workflows</span>
+      <h3>Scalable analysis pipelines</h3>
+      <p>Creating reproducible analysis chains in Python and Earth Engine for large-scale geospatial monitoring across agricultural and ecological systems.</p>
+    </article>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom">
+      <span>© 2026 Enrico Magazzino</span>
+      <span>Updated June 2026</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
