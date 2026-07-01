@@ -29,9 +29,11 @@
   </nav>
 </header>
 <style>
-.trole-img{width:220px;max-width:34%;height:auto;float:right;margin-left:18px;border-radius:8px;object-fit:cover}
+.trole-img{width:220px;max-width:34%;height:140px;float:right;margin-left:18px;border-radius:8px;object-fit:cover;object-position:center}
+.trole-img--topcrop{object-position:center top}
+.trole-img--larger{width:220px;max-width:34%;height:160px;margin-left:14px;object-fit:cover;object-position:center top}
 .trole::after{content:"";display:table;clear:both}
-@media (max-width:700px){.trole-img{width:140px;max-width:40%;margin-left:12px}}
+@media (max-width:700px){.trole-img{width:140px;max-width:40%;height:90px;margin-left:12px}.trole-img--topcrop{object-position:center top}.trole-img--larger{width:140px;height:115px;max-width:40%;margin-left:12px}}
 </style>
 <main>
   <div class="wrap">
@@ -48,6 +50,7 @@
       <div class="titem">
         <div class="tdate">2026</div>
         <div class="trole">
+          <img src="pictures/ASITA2026.png" alt="ASITA 2026" class="trole-img">
           <h3>ASITA 2026</h3>
           <div class="torg">Poster & annals article</div>
           <p>Desktop GUI pipelines for Sentinel-1 and Sentinel-2 processing as Cloud-Optimised GeoTIFFs, accepted in the session "New sensors, platforms and products in remote sensing."</p>
@@ -88,6 +91,7 @@
       <div class="titem">
         <div class="tdate">2024</div>
         <div class="trole">
+          <img src="pictures/ASITA 2024.png" alt="ASITA 2024" class="trole-img trole-img--larger">
           <h3>ASITA 2024</h3>
           <div class="torg">Conference participation</div>
           <p>Research on new sensors, platforms and products in remote sensing.</p>
